@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Counter</title>
+</head>
+<body>
+    <p>
+        <button onclick="increaseCount()">Click Me!</button>
+        <button onclick="decreaseCount()">Decrease</button>
+    </p>
+    <span>
+        <h1>Button clicked <span id="countData">0</span> Times!</h1>
+    </span>
 
+    <script type="text/javascript">
+        var count = 0;
+        function increaseCount() {
+            count++;
+            document.getElementById("countData").innerHTML = count;
+        }
+        function decreaseCount() {
+            count = count - 1;
+            document.getElementById("countData").innerHTML = count;
+        }
+    </script>
+</body>
+</html>
